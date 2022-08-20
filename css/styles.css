@@ -1,6 +1,6 @@
 :root {
   /* font */
-  --main-font: "Roboto", sans-serif;
+  --main-font: 'Roboto', sans-serif;
 
   /* txt-cl */
   --main-title-cl: #212121;
@@ -27,7 +27,9 @@ body {
 }
 
 .logo {
+  font-family: 'Raleway', sans-serif;
   color: var(--main-acsent-cl);
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -47,21 +49,34 @@ ul {
 }
 .header-studio,
 .header-project,
-.header-contact {
-  color: var(--main-title-cl);
+.header-contact,
+.header-mail,
+.header-tel {
+  font-size: 14px;
   font-weight: var(--main-font-weight500);
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
-.header-studio:hover {
+.header-studio:hover,
+.header-project:hover,
+.header-contact:hover,
+.header-mail:hover,
+.header-tel:hover {
   color: var(--main-acsent-cl);
 }
-.header-studio:focus {
+.header-studio:focus,
+.header-project:focus,
+.header-contact:focus,
+.header-mail:focus,
+.header-tel:focus {
   color: var(--main-acsent-cl);
 }
-.header-mail {
-  color: var(--main-acsent-cl);
+.header-studio,
+.header-project,
+.header-contact {
+  color: var(--main-title-cl);
 }
+.header-mail,
 .header-tel {
   color: var(--main-txt-cl);
 }
@@ -88,8 +103,8 @@ h1 {
   color: var(--main-bg-cl);
   background-color: var(--main-acsent-cl);
   font-weight: var(--main-font-weight700);
+  cursor: pointer;
 }
-
 .visually-hidden {
   display: none;
 }
@@ -104,6 +119,7 @@ h2 {
   letter-spacing: 0.03em;
 }
 h3 {
+  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -137,18 +153,28 @@ p {
 .footer-adress {
   color: var(--main-bg-cl);
 }
+.footer-tel,
+.footer-mail {
+  color: var(--main-contact-cl);
+}
 .footer-mail,
 .footer-tel,
 .footer-adress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
-.footer-tel,
-.footer-mail {
-  color: var(--main-contact-cl);
+.footer-mail:hover,
+.footer-tel:hover,
+.footer-adress:hover {
+  color: var(--main-acsent-cl);
+}
+.footer-mail:focus,
+.footer-tel:focus,
+.footer-adress:focus {
+  color: var(--main-acsent-cl);
 }
 
 /* portfolio */
@@ -159,8 +185,12 @@ button {
   letter-spacing: 0.03em;
   color: var(--main-title-cl);
   font-weight: var(--main-font-weight700);
+  background-color: var(--main-bg-commands);
+  font-family: inherit;
+  cursor: pointer;
 }
-button:hover {
+button:hover,
+button:focus {
   color: var(--main-bg-cl);
   background-color: var(--main-acsent-cl);
 }
