@@ -132,12 +132,10 @@ h4 {
   letter-spacing: 0.03em;
 }
 p {
-  color: var(--main-txt-cl);
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 .team-position {
-  color: var(--main-txt-cl);
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
@@ -184,7 +182,7 @@ button {
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: var(--main-title-cl);
-  font-weight: var(--main-font-weight700);
+  font-weight: var(--main-font-weight500);
   background-color: var(--main-bg-commands);
   font-family: inherit;
   cursor: pointer;
@@ -206,5 +204,5 @@ button:focus {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
-  font-weight: var(--main-font-weight700);
+  font-weight: 400;
 }
